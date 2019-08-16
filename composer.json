@@ -1,4 +1,13 @@
 {
+    "name": "supermetrics/metrics-calculator",
+    "license": "proprietary",
+    "type": "project",
+    "description": "Service to calculate metrics",
+    "autoload": {
+        "psr-4": {
+            "Supermetrics\\": "src/"
+        }
+    },
     "require": {
         "guzzlehttp/guzzle": "^6.3"
     }
