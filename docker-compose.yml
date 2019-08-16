@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+    php:
+        container_name: metrics-calulator-php
+        working_dir: '/var/www/metrics-calculator'
+        build: ./docker/php
+        environment:
+            SSH_AUTH_SOCK: /tmp/agent.sock
+        tty: true
+        networks:
+            - default
+        volumes:
+            - './docker/php/php.ini:/usr/local/etc/php/conf.d/custom.ini'
+            - $SSH_AUTH_SOCK:/tmp/agent.sock
+            - '~/.ssh:/root/.ssh'
+            - './:/var/www/metrics-calculator'
+        expose:
+            - 9000
