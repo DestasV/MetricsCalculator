@@ -5,14 +5,17 @@
     "description": "Service to calculate metrics",
     "autoload": {
         "psr-4": {
-            "Supermetrics\\": "src/"
+            "Supermetrics\\": "src/",
+            "Supermetrics\\Tests\\": "tests/"
         }
     },
     "require": {
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-json": "*"
     }
     ,
     "require-dev": {
-        "roave/security-advisories": "dev-master"
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^7"
     }
 }

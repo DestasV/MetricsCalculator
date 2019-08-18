@@ -36,7 +36,7 @@ class Client
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function request(string $url, string $method, array $params = null)
+    public function request(string $url, string $method, array $params)
     {
         return $this->client->request($method, $url, $params);
     }
