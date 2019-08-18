@@ -20,5 +20,10 @@
 6. Run project to see calculation results
     `php index.php`
 
-7. Run tests
+## Run project
+- Run project inside php container to see calculation results
+    `php index.php`
+    
+## Tests
+- Run tests inside php container (4)
     `vendor/phpunit/phpunit/phpunit tests`
